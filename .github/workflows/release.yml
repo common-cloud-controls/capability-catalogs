@@ -11,6 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        max-parallel: 1
         include:
           - path: ai-ml/gen-ai
             title: Generative AI
