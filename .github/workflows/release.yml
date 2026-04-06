@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+      max-parallel: 1
       matrix:
-        max-parallel: 1
         include:
           - path: ai-ml/gen-ai
             title: Generative AI
