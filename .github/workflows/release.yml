@@ -60,7 +60,7 @@ jobs:
             title: Object Storage
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0  # required to compare against previous tags
 
@@ -79,7 +79,7 @@ jobs:
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         if: steps.changes.outputs.changed == 'true'
         with:
           repository: common-cloud-controls/delivery-toolkit
