@@ -1,5 +1,5 @@
 imports:
-  - reference-id: CCC
+  - reference-id: CCC.Core.Capabilities
     entries:
       - reference-id: CCC.Core.CP03
         remarks: Access Log Publication
