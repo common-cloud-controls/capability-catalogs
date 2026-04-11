@@ -31,56 +31,56 @@ imports:
         remarks: Passive Ingestion
 
 capabilities:
-  - id: CCC.K8S.F01
+  - id: CCC.K8S.CP01
     title: Managed Kubernetes Control Plane
     description: |
       Provides a fully managed Kubernetes control plane that has
       high availability, with automatic updates and patching.
 
-  - id: CCC.K8S.F02
+  - id: CCC.K8S.CP02
     title: Managed Node Pool
     description: |
       Provides fully managed Kubernetes worker nodes (compute resources).
       These nodes are provisioned, updated, patched, and monitored for you
       by the service.
 
-  - id: CCC.K8S.F03
+  - id: CCC.K8S.CP03
     title: Virtual Nodes
     description: |
       Ability to have fully managed virtual compute resources to power Kubernetes
       worker nodes. This will eliminate the need to manage underlying nodes.
 
-  - id: CCC.K8S.F04
+  - id: CCC.K8S.CP04
     title: GPU Support
     description: |
       Support for GPU-accelerated workloads through integration of GPUs,
       enabling high-performance computing.
 
-  - id: CCC.K8S.F05
+  - id: CCC.K8S.CP05
     title: OCI Container Image Execution
     description: |
       Supports running containerized workloads using OCI-compliant images,
       providing an isolated execution environment for applications.
 
-  - id: CCC.K8S.F06
+  - id: CCC.K8S.CP06
     title: Container Registry Integration
     description: |
       Enables integration with public or private container registries to
       retrieve container images for execution.
 
-  - id: CCC.ContOrch.F07
+  - id: CCC.ContOrch.CP07
     title: Storage Integration
     description: |
       Supports attaching ephemeral or persistent storage volumes to running containers
       in the Kubernetes cluster.
 
-  - id: CCC.K8S.F08
+  - id: CCC.K8S.CP08
     title: Built-in Ingress Load Balancing
     description: |
       Built-in support for distributes incoming traffic across running container
       instances to optimize resource usage and availability.
 
-  - id: CCC.ContOrch.F09
+  - id: CCC.ContOrch.CP09
     title: Cluster Auto Scaling
     description: |
       Ability to automatically scale the number of worker nodes in the cluster
