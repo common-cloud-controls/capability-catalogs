@@ -52,7 +52,7 @@ An optional list of references to capabilities defined in another catalog (typic
 
 ```yaml
 imports:
-  - reference-id: CCC
+  - reference-id: CCC.Core.Capabilities
     entries:
       - reference-id: CCC.Core.CP01
         remarks: Encryption in Transit Enabled by Default
