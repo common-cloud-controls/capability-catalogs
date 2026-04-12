@@ -41,67 +41,79 @@ imports:
 capabilities:
   - id: CCC.ObjStor.CP01
     title: Storage Buckets
+    group: Data
     description: |
       Provides uniquely identifiable segmentations in which data elements may
       be stored.
 
   - id: CCC.ObjStor.CP02
     title: Storage Objects
+    group: Data
     description: |
       Supports storing, accessing, and managing data elements which contain
       both data and metadata.
 
   - id: CCC.ObjStor.CP03
     title: Bucket Capacity Limit
+    group: Resource
     description: |
       Provides the ability to set a maximum total capacity for objects within
       a bucket.
 
   - id: CCC.ObjStor.CP04
     title: Object Size Limit
+    group: Resource
     description: |
       Supports setting a maximum object size for storing objects.
 
   - id: CCC.ObjStor.CP05
     title: Store New Objects
+    group: Data
     description: |
       Supports for storing a new object in the bucket.
 
   - id: CCC.ObjStor.CP06
     title: Replace Stored Objects
+    group: Data
     description: |
       Supports for replacing an object in the bucket with a new object for the same key.
 
   - id: CCC.ObjStor.CP07
     title: Delete Stored Objects
+    group: Data
     description: |
       Supports for deleting objects from the bucket given the object key.
 
   - id: CCC.ObjStor.CP08
     title: Lifecycle Policies
+    group: Resource
     description: |
       Supports defining policies to automate data management tasks, especially
       those related to cost management.
 
   - id: CCC.ObjStor.CP09
     title: Object Modification Locks
+    group: Data
     description: |
       Allows locking of objects to disable modification and/or deletion of an
       object for a defined period of time.
 
   - id: CCC.ObjStor.CP10
     title: Object Level Access Control
+    group: Access
     description: |
       Supports controlling access to specific objects within the object store.
 
   - id: CCC.ObjStor.CP11
     title: Querying
+    group: Data
     description: |
       Supports performing simple select queries to retrieve only a subset of
       objects from the bucket.
 
   - id: CCC.ObjStor.CP12
     title: Storage Classes
+    group: Resource
     description: |
       Provides different storage classes for frequently and infrequently
       accessed objects.

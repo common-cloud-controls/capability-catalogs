@@ -27,6 +27,7 @@ imports:
 capabilities:
   - id: CCC.MLDE.CP01
     title: Managed Notebook Environments
+    group: MachineLearning
     description: |
       Provides fully managed notebook instances specifically designed
       for machine learning development, eliminating the need to manage
@@ -34,6 +35,7 @@ capabilities:
 
   - id: CCC.MLDE.CP02
     title: Pre-configured Machine Learning Libraries
+    group: MachineLearning
     description: |
       Offers environments pre-installed with popular machine
       learning libraries and frameworks such as TensorFlow, PyTorch,
@@ -41,6 +43,7 @@ capabilities:
 
   - id: CCC.MLDE.CP03
     title: Integrated Experiment Management
+    group: MachineLearning
     description: |
       Facilitates tracking and management of machine learning
       experiments, including parameters, metrics, and artifacts,
@@ -48,6 +51,7 @@ capabilities:
 
   - id: CCC.MLDE.CP04
     title: Model Training and Deployment Integration
+    group: MachineLearning
     description: |
       Supports seamless transition from model development to
       training and deployment, allowing models to be trained and
@@ -55,6 +59,7 @@ capabilities:
 
   - id: CCC.MLDE.CP05
     title: Automated Machine Learning (AutoML) Capabilities
+    group: MachineLearning
     description: |
       Offers AutoML functionalities to automatically build,
       train, and optimize machine learning models with minimal
@@ -62,12 +67,14 @@ capabilities:
 
   - id: CCC.MLDE.CP06
     title: GPU/Specialized Hardware Support
+    group: Compute
     description: |
       Provides access to GPU instances and specialized ML acceleration
       hardware (TPUs, FPGAs) with automated driver and runtime management.
 
   - id: CCC.MLDE.CP07
     title: Data Pipeline Integration
+    group: Processing
     description: |
       Supports integration with data preparation and feature engineering
       pipelines, including versioning of datasets and capabilities used in
@@ -75,6 +82,7 @@ capabilities:
 
   - id: CCC.MLDE.CP08
     title: Model Registry
+    group: MachineLearning
     description: |
       Provides centralized storage and versioning for trained models,
       including metadata about training runs, model artifacts, and
@@ -82,18 +90,21 @@ capabilities:
 
   - id: CCC.MLDE.CP09
     title: Collaborative Development Support
+    group: MachineLearning
     description: |
       Enables multiple data scientists to work on the same project with
       version control integration, shared notebooks, and resource management.
 
   - id: CCC.MLDE.CP10
     title: Model Monitoring and Drift Detection
+    group: Observability
     description: |
       Supports monitoring of deployed models for performance degradation,
       data drift, and concept drift with automated alerting capabilities.
 
   - id: CCC.MLDE.CP11
     title: Reproducibility Capabilities
+    group: MachineLearning
     description: |
       Provides capability to capture and version all components needed to
       reproduce an ML experiment, including code, data, and environment
@@ -101,6 +112,7 @@ capabilities:
 
   - id: CCC.MLDE.CP12
     title: Resource Scheduling and Optimization
+    group: Resource
     description: |
       Supports scheduling and optimization of compute resources for
       training jobs, including spot instance usage and auto-scaling
@@ -108,6 +120,7 @@ capabilities:
 
   - id: CCC.MLDE.CP13
     title: Security and Compliance Controls
+    group: MachineLearning
     description: |
       Provides specific controls for ML workflows including model
       governance, bias detection, and compliance documentation for

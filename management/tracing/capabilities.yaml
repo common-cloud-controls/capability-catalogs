@@ -29,6 +29,7 @@ imports:
 capabilities:
   - id: CCC.Tracing.CP01
     title: Distributed Telemetry Collection
+    group: Observability
     description: |
       Collects end-to-end telemetry (spans, segments, and trace events) from
       instrumented applications and infrastructure, and aggregates them into
@@ -37,6 +38,7 @@ capabilities:
 
   - id: CCC.Tracing.CP02
     title: Dependency Mapping and Visualization
+    group: Observability
     description: |
       Automatically builds visual or logical graphs of upstream and
       downstream dependencies (services, functions, databases, external
@@ -45,6 +47,7 @@ capabilities:
 
   - id: CCC.Tracing.CP03
     title: Distributed Context Propagation
+    group: Observability
     description: |
       Propagates trace and span identifiers across service boundaries using
       standardized headers/protocols so operations for the same request can
@@ -52,6 +55,7 @@ capabilities:
 
   - id: CCC.Tracing.CP04
     title: Performance Profiling
+    group: Observability
     description: |
       Analyzes trace data to surface runtime characteristics such asexecution
       durations, slow operations, bottlenecks, and regressions for providing
@@ -59,6 +63,7 @@ capabilities:
 
   - id: CCC.Tracing.CP05
     title: Error Correlation
+    group: Observability
     description: |
       Detects errors, exceptions, faults, and retry patterns within spans and
       correlates them to affected request paths so users can pinpoint the
@@ -66,6 +71,7 @@ capabilities:
 
   - id: CCC.Tracing.CP06
     title: Sampling
+    group: Observability
     description: |
       Provides configurable sampling strategies such as rules-based, rate-based,
       and adaptive to control trace volume and balance observability needs with
@@ -73,6 +79,7 @@ capabilities:
 
   - id: CCC.Tracing.CP07
     title: Trace Querying & Filtering
+    group: Observability
     description: |
       Offers a query and filtering interface to retrieve traces by latency,
       error status, service name, operation, tag values, time windows, and
@@ -80,6 +87,7 @@ capabilities:
 
   - id: CCC.Tracing.CP08
     title: Integration with Logs and Metrics
+    group: Observability
     description: |
       Correlates traces with logs and metrics from related resources to
       provide unified observability; users can pivot between telemetry types
@@ -87,6 +95,7 @@ capabilities:
 
   - id: CCC.Tracing.CP09
     title: Trace Retention
+    group: Observability
     description: |
       Stores trace data for configurable retention periods and supports
       time-to-live policies driven by workload needs, cost constraints, or
@@ -94,6 +103,7 @@ capabilities:
 
   - id: CCC.Tracing.CP10
     title: Assistance for Root Cause Analysis
+    group: Observability
     description: |
       Analyzes trace patterns, latency anomalies, and error flows to surface
       likely sources of failures or performance degradation and highlight

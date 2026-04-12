@@ -47,6 +47,7 @@ imports:
 capabilities:
   - id: CCC.DataWar.CP01
     title: Centralized Data Repository
+    group: Data
     description: |
       Acts as a centralized repository where data from various
       sources is consolidated, making it easier to manage and
@@ -54,53 +55,62 @@ capabilities:
 
   - id: CCC.DataWar.CP02
     title: Optimized Query Performance
+    group: Data
     description: |
       Handles complex queries on large datasets efficiently using
       techniques such as indexing and partitioning.
 
   - id: CCC.DataWar.CP03
     title: Scalability
+    group: Resource
     description: |
       Ability to scale with growing data volumes and handle multiple
       queries simultaneously without compromising the performance.
 
   - id: CCC.DataWar.CP04
     title: Column Storage
+    group: Data
     description: |
       Stores data in columns rather than rows for efficient
       data retrieval.
 
   - id: CCC.DataWar.CP05
     title: SQL Based Querying
+    group: Data
     description: |
       Supports SQL based querying on the data sets with specific
       enhancements and optimization for data warehousing.
 
   - id: CCC.DataWar.CP06
     title: Data Types
+    group: Data
     description: |
       Ability to store processed structured and semi-structured
       data optimized for querying and analysis.
 
   - id: CCC.DataWar.CP07
     title: Massively Parallel Processing (MPP)
+    group: Processing
     description: |
       Distributes queries across multiple nodes for increased performance.
 
   - id: CCC.DataWar.CP08
     title: Materialized Views
+    group: Data
     description: |
       Ability to store results of a query into physical tables for faster
       data retrieval and improved query performance for complex queries.
 
   - id: CCC.DataWar.CP09
     title: Column-Level Security
+    group: Access
     description: |
       Allows setting access policies at the column level to
       restrict access to sensitive data fields within tables.
 
   - id: CCC.DataWar.CP10
     title: Row-Level Security
+    group: Access
     description: |
       Enables setting access policies at the row level to
       control access to subsets of data within a table based
@@ -108,6 +118,7 @@ capabilities:
 
   - id: CCC.DataWar.CP11
     title: Integration with Data Sources
+    group: Ingestion
     description: |
       Seamless integration with various data sources such as object
       storage, relational and non-relational databases, data streams
@@ -115,6 +126,7 @@ capabilities:
 
   - id: CCC.DataWar.CP12
     title: Integration with ETL
+    group: Processing
     description: |
       Integration with services that perform extract, transform and
       load data from various sources into the data warehouse. Unstructured
@@ -123,6 +135,7 @@ capabilities:
 
   - id: CCC.DataWar.CP13
     title: Integration with ML
+    group: MachineLearning
     description: |
       Build-in integration with machine learning services for enhanced
       processing of large volumes of complex data with ML models for
@@ -131,6 +144,7 @@ capabilities:
 
   - id: CCC.DataWar.CP14
     title: Real-time Metrics Publication
+    group: Observability
     description: |
       Ability to continuously track and analyze data as it is ingested,
       processed and stored to ensure data quality, operational efficiency,
@@ -138,12 +152,14 @@ capabilities:
 
   - id: CCC.DataWar.CP15
     title: Cross-Region Replication
+    group: Data
     description: |
       Ability to replicate data to multiple regions for high availability,
       disaster recovery and low-latency access.
 
   - id: CCC.DataWar.CP16
     title: View Creation and Access
+    group: Data
     description: |
       Supports the creation of views (can be logical or material) to abstract
       and simplify access to underlying data. Views can be created with custom

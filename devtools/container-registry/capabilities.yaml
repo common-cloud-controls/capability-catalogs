@@ -37,29 +37,34 @@ imports:
 capabilities:
   - id: CCC.CntrReg.CP01
     title: Image Storage
+    group: Resource
     description: |
       Ability to upload and securely store container images and image metadata.
 
   - id: CCC.CntrReg.CP02
     title: Private Repositories
+    group: Access
     description: |
       Support for creating container image repositories that are restricted and
       only accessible by authorized users or services.
 
   - id: CCC.CntrReg.CP03
     title: Public Repositories
+    group: Access
     description: |
       Support for creating container image repositories that are open to the public.
       These repositories are used mainly for sharing container images.
 
   - id: CCC.CntrReg.CP04
     title: Lifecycle Policies
+    group: Resource
     description: |
       Supports defining of policies for automatic expiry of
       unused or outdated images to manage storage effectively.
 
   - id: CCC.CntrReg.CP05
     title: Image Scanning
+    group: Observability
     description: |
       Provides vulnerability scanning for container images (built-in
       or through integration to scanning services) to detect security
@@ -68,17 +73,20 @@ capabilities:
 
   - id: CCC.CntrReg.CP06
     title: Integration with CI/CD Tooling
+    group: Orchestration
     description: |
       Seamlessly integrates with CI/CD pipelines to automate pushing and pulling of
       container images.
 
   - id: CCC.CntrReg.CP07
     title: Caching of Images
+    group: Resource
     description: |
       Provides caching for faster access to frequently used images.
 
   - id: CCC.CntrReg.CP08
     title: Multi-platform Support
+    group: Resource
     description: |
       Ability to store images built for different CPU architectures such as
       x86_64 (AMD/Intel), ARM64, and others within the same container image
@@ -86,6 +94,7 @@ capabilities:
 
   - id: CCC.CntrReg.CP09
     title: Immutable Tags
+    group: Data
     description: |
       Prevent tags from being overwritten or deleted once they have been
       assigned to an image. This ensures that once a container image is tagged
@@ -94,45 +103,53 @@ capabilities:
 
   - id: CCC.CntrReg.CP10
     title: List Repositories
+    group: Resource
     description: |
       Ability to list all public and private repositories in the container
       image registry.
 
   - id: CCC.CntrReg.CP11
     title: Edit Repository
+    group: Resource
     description: |
       Ability to edit a public or private container image repository properties
       after being created.
 
   - id: CCC.CntrReg.CP12
     title: Delete Repository
+    group: Resource
     description: |
       Ability to delete a public or private container image repository after
       being created.
 
   - id: CCC.CntrReg.CP13
     title: List Images
+    group: Resource
     description: |
       Ability to list container images in a public or private container image
       repository.
 
   - id: CCC.CntrReg.CP14
     title: Delete Image
+    group: Resource
     description: |
       Ability to delete a container image after being created.
 
   - id: CCC.CntrReg.CP15
     title: List Lifecycle Policies
+    group: Resource
     description: |
       Ability to list lifecycle policies for container images in a public or private
       container repository.
 
   - id: CCC.CntrReg.CP16
     title: Edit Lifecycle Policy
+    group: Resource
     description: |
       Ability to edit a lifecycle policy after being created.
 
   - id: CCC.CntrReg.CP17
     title: Delete Lifecycle Policy
+    group: Resource
     description: |
       Ability to delete a lifecycle policy after being created.

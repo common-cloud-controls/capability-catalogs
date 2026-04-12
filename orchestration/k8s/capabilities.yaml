@@ -33,12 +33,14 @@ imports:
 capabilities:
   - id: CCC.K8S.CP01
     title: Managed Kubernetes Control Plane
+    group: Orchestration
     description: |
       Provides a fully managed Kubernetes control plane that has
       high availability, with automatic updates and patching.
 
   - id: CCC.K8S.CP02
     title: Managed Node Pool
+    group: Orchestration
     description: |
       Provides fully managed Kubernetes worker nodes (compute resources).
       These nodes are provisioned, updated, patched, and monitored for you
@@ -46,54 +48,63 @@ capabilities:
 
   - id: CCC.K8S.CP03
     title: Virtual Nodes
+    group: Compute
     description: |
       Ability to have fully managed virtual compute resources to power Kubernetes
       worker nodes. This will eliminate the need to manage underlying nodes.
 
   - id: CCC.K8S.CP04
     title: GPU Support
+    group: Compute
     description: |
       Support for GPU-accelerated workloads through integration of GPUs,
       enabling high-performance computing.
 
   - id: CCC.K8S.CP05
     title: OCI Container Image Execution
+    group: Orchestration
     description: |
       Supports running containerized workloads using OCI-compliant images,
       providing an isolated execution environment for applications.
 
   - id: CCC.K8S.CP06
     title: Container Registry Integration
+    group: Orchestration
     description: |
       Enables integration with public or private container registries to
       retrieve container images for execution.
 
   - id: CCC.ContOrch.CP07
     title: Storage Integration
+    group: Data
     description: |
       Supports attaching ephemeral or persistent storage volumes to running containers
       in the Kubernetes cluster.
 
   - id: CCC.K8S.CP08
     title: Built-in Ingress Load Balancing
+    group: Networking
     description: |
       Built-in support for distributes incoming traffic across running container
       instances to optimize resource usage and availability.
 
   - id: CCC.ContOrch.CP09
     title: Cluster Auto Scaling
+    group: Resource
     description: |
       Ability to automatically scale the number of worker nodes in the cluster
       based on workload demand, ensuring efficient resource utilization.
 
   - id: CCC.K8S.F10
     title: Private Cluster Endpoints
+    group: Networking
     description: |
       Ability to restrict access to the Kubernetes API server to private networks,
       ensuring the control plane is only accessible within your VPC.
 
   - id: CCC.K8S.F11
     title: Service Mesh Integration
+    group: Networking
     description: |
       Ability to integrate with managed service mesh offering by the cloud
       service provider for service discovery, traffic routing, observability,
@@ -101,6 +112,7 @@ capabilities:
 
   - id: CCC.K8S.F12
     title: Secrets Integration
+    group: Access
     description: |
       Ability to seamlessly integrate with cloud native secret manager service
       to securely manage and access secrets, such as API keys, database credentials,
@@ -108,6 +120,7 @@ capabilities:
 
   - id: CCC.K8S.F13
     title: Observability Tooling Integration
+    group: Observability
     description: |
       Ability integrate with Observability tooling such as Prometheus and Grafana
       to provide comprehensive monitoring, and visualization for Kubernetes clusters.

@@ -35,93 +35,110 @@ imports:
 capabilities:
   - id: CCC.Message.CP01
     title: Publish/Subscribe Model
+    group: Messaging
     description: |
       Uses publish/subscribe (pub/sub) messaging service model for
       fan-out distribution of messages to multiple subscribers.
 
   - id: CCC.Message.CP02
     title: Message Storage Policies
+    group: Data
     description: |
       Ability to control the region where messages are stored.
 
   - id: CCC.Message.CP03
     title: Creating Topics and Publish Messages
+    group: Messaging
     description: |
       Ability to create new topics and publish messages to topics
 
   - id: CCC.Message.CP04
     title: List Topics
+    group: Messaging
     description: |
       Ability to to list all existing topics.
 
   - id: CCC.Message.CP05
     title: Edit Topics
+    group: Messaging
     description: |
       Ability to to edit properties of existing topics other than
       the topic name and ordering preference.
 
   - id: CCC.Message.CP06
     title: Delete Topics
+    group: Messaging
     description: |
       Ability to to delete existing topics.
 
   - id: CCC.Message.CP07
     title: Subscribe to Topics and Receive messages
+    group: Messaging
     description: |
       Ability to subscribe to topics and receive messages.
 
   - id: CCC.Message.CP08
     title: List Subscribers
+    group: Messaging
     description: |
       Ability to list all subscribers for a given topics.
 
   - id: CCC.Message.CP09
     title: Edit Subscriber
+    group: Messaging
     description: |
       Ability to edit subscriber properties such as subscription
       filter policies after subscriber is created.
 
   - id: CCC.Message.CP10
     title: Delete Subscribers
+    group: Messaging
     description: |
       Ability to delete subscriber from a given topic.
 
   - id: CCC.Message.CP11
     title: FIFO Message Ordering
+    group: Messaging
     description: |
       Support for first-in, first-out strictly preserved message
       ordering with exactly one message delivered.
 
   - id: CCC.Message.CP12
     title: Best Effort Message Ordering
+    group: Messaging
     description: |
       Support for best-effort message ordering with at-least one
       message delivered.
 
   - id: CCC.Message.CP13
     title: Deduplication of Messages
+    group: Messaging
     description: |
       Support for deduplication of messages with use of messaging
       service capabilities or deduplication IDs.
 
   - id: CCC.Message.CP14
     title: Dead Letter Topics
+    group: Messaging
     description: |
       Supports dead-letter topics for handling messages that cannot be
       delivered or processed.
 
   - id: CCC.Message.CP15
     title: Access Policies
+    group: Access
     description: |
       Ability to specify access policies on publishers and subscribers.
 
   - id: CCC.Message.CP16
     title: Message Filtering
+    group: Messaging
     description: |
       Allows subscribers to receive subset of messages published to the
       subscribed topic based on attributes or content.
 
   - id: CCC.Message.CP17
     title: Message Retention
+    group: Data
     description: |
       Ability to set message retention durations per topic.

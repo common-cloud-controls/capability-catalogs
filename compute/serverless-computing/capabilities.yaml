@@ -43,12 +43,14 @@ imports:
 capabilities:
   - id: CCC.SvlsComp.CP01
     title: Event Driven Execution
+    group: Compute
     description: |
       Supports execution of code functions in response to events
       without the need to manage underlying server infrastructure.
 
   - id: CCC.SvlsComp.CP02
     title: Event Triggers
+    group: Compute
     description: |
       Ability to configure event triggers for functions such as
       HTTP requests, cloud storage changes, messaging services,
@@ -56,66 +58,78 @@ capabilities:
 
   - id: CCC.SvlsComp.CP03
     title: Stateless Architecture
+    group: Compute
     description: |
       Functions are stateless and do not retain data or state
       between invocations.
 
   - id: CCC.SvlsComp.CP04
     title: Cold Start
+    group: Compute
     description: |
       New execution environment is created and initialized to process
       an incoming request which is the default behaviour.
 
   - id: CCC.SvlsComp.CP05
     title: Warm Start
+    group: Compute
     description: |
       Ability to reuse of an already-initialized execution environment to
       handle subsequent requests, to reduce invocation latency
 
   - id: CCC.SvlsComp.CP06
     title: Flexible Resource Allocation
+    group: Resource
     description: |
       Ability to control resource allocations such as CPU, memory, and network.
 
   - id: CCC.SvlsComp.CP07
     title: Customizable Execution Timeout
+    group: Compute
     description: |
       Ability to configure function execution timeout for allowing
       short/long-running tasks.
 
   - id: CCC.SvlsComp.CP08
     title: Native Runtime Support - Node.js
+    group: Compute
     description: |
       Support Node.js runtime by default.
 
   - id: CCC.SvlsComp.CP09
     title: Native Runtime Support - Python
+    group: Compute
     description: |
       Support Python runtime by default.
 
   - id: CCC.SvlsComp.CP10
     title: Native Runtime Support - Java
+    group: Compute
     description: |
       Support Java runtime by default.
 
   - id: CCC.SvlsComp.CP11
     title: Native Runtime Support - .NET Core
+    group: Compute
     description: |
       Support .NET runtime by default.
 
   - id: CCC.SvlsComp.CP12
     title: Custom Runtimes
+    group: Compute
     description: |
       Support any language by allowing functions to use custom runtime
 
   - id: CCC.SvlsComp.CP13
     title: Environment Variables
+    group: Compute
     description: |
       Allows setting environment variables for functions to store
       configuration settings and operational parameters.
 
   - id: CCC.SvlsComp.CP14
     title: Aliases
+    group: Resource
     description: |
       Support the use of aliases such as dev, test, prod to manage
       different environments or blue/green deployments  without
@@ -123,6 +137,7 @@ capabilities:
 
   - id: CCC.SvlsComp.CP15
     title: Container Image Support
+    group: Compute
     description: |
       Ability to deploy and run functions packaged as container images
       using predefined runtimes, that were built using container tools
@@ -130,31 +145,37 @@ capabilities:
 
   - id: CCC.SvlsComp.CP16
     title: Concurrency Limit
+    group: Resource
     description: |
       Ability to configure a limit for the concurrent executions of a function.
 
   - id: CCC.SvlsComp.CP17
     title: Throttling
+    group: Resource
     description: |
       Incoming requests are throttled when the function exceeds its
       concurrency limit.
 
   - id: CCC.SvlsComp.CP18
     title: List Functions
+    group: Resource
     description: |
       Ability to list all existing functions.
 
   - id: CCC.SvlsComp.CP19
     title: Create Functions
+    group: Resource
     description: |
       Ability to create new functions.
 
   - id: CCC.SvlsComp.CP20
     title: Edit Function
+    group: Resource
     description: |
       Ability to edit an existing function.
 
   - id: CCC.SvlsComp.CP21
     title: Delete Function
+    group: Resource
     description: |
       Ability to delete an existing function.

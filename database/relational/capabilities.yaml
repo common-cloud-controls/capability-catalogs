@@ -51,84 +51,100 @@ imports:
 capabilities:
   - id: CCC.RDMS.CP01
     title: SQL Support
+    group: Data
     description: |
       Properly handle queries in the SQL language.
 
   - id: CCC.RDMS.CP02
     title: DB Engine Option - MySQL
+    group: Data
     description: |
       Ability to create a MySQL managed relational database.
 
   - id: CCC.RDMS.CP03
     title: DB Engine Option - PostgreSQL
+    group: Data
     description: |
       Ability to create a PostgreSQL managed relational database.
 
   - id: CCC.RDMS.CP04
     title: DB Engine Option - MariaDB
+    group: Data
     description: |
       Ability to create a MariaDB managed relational database.
 
   - id: CCC.RDMS.CP05
     title: DB Engine Option - SQL Server
+    group: Data
     description: |
       Ability to create a Microsoft SQL Server managed relational database.
 
   - id: CCC.RDMS.CP06
     title: DB Managed Credentials
+    group: Access
     description: |
       Ability to managed the database credentials using the cloud
       provider's secret management service.
 
   - id: CCC.RDMS.CP07
     title: DB Self Managed Credentials
+    group: Access
     description: |
       Ability to manage the database credentials by client managed
       username and passwords.
 
   - id: CCC.RDMS.CP08
     title: Support for IPv4
+    group: Networking
     description: |
       Ability to connect to the database using IPv4 addresses.
 
   - id: CCC.RDMS.CP09
     title: Support for IPv6
+    group: Networking
     description: |
       Ability to connect to the database using IPv6 addresses
 
   - id: CCC.RDMS.CP10
     title: Public Access
+    group: Networking
     description: |
       Allow database to be accessed by public internet.
 
   - id: CCC.RDMS.CP11
     title: Disable Public Access
+    group: Networking
     description: |
       Prevent database been accessed by public internet.
 
   - id: CCC.RDMS.CP12
     title: Managed Connection Pooling
+    group: Networking
     description: |
       Ability to configure a managed connection pool for the database.
 
   - id: CCC.RDMS.CP13
     title: Deletion Protection
+    group: Resource
     description: |
       Protect the database against accidental deletion.
 
   - id: CCC.RDMS.CP14
     title: Dedicated Database Instances
+    group: Compute
     description: |
       Option to deploy the database on a dedicated instance for
       isolation requirements.
 
   - id: CCC.RDMS.CP15
     title: Horizontal Scaling
+    group: Data
     description: |
       Read replicas of the primary database can be created.
 
   - id: CCC.RDMS.CP16
     title: Failover
+    group: Data
     description: |
       Standby database can be implemented for failover when the
       primary can't be reached.

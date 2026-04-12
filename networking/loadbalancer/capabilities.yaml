@@ -39,11 +39,13 @@ imports:
 capabilities:
   - id: CCC.LB.CP01
     title: Static Load Balancing
+    group: Networking
     description: |
       Employ load balancing algorithms that follow fixed rules,
       independent of the current server state.
   - id: CCC.LB.CP02
     title: Dynamic Load Balancing
+    group: Networking
     description: |
       Employ load balancing algorithms that consider the current state
       of servers before distributing traffic. Load balancer adjusts traffic
@@ -51,12 +53,14 @@ capabilities:
       utilization, and traffic conditions.
   - id: CCC.LB.CP03
     title: Layer 7 Routing
+    group: Networking
     description: |
       Providing distribution of incoming traffic based on the application layer
       or layer 7 (on ISO model) information. Some of the supported protocols on
       layer 7 are HTTP, HTTPS, HTTP/2, gRPC, and WebSockets.
   - id: CCC.LB.CP04
     title: Layer 4 Routing
+    group: Networking
     description: |
       Providing distribution of incoming traffic based on the
       transport layer or layer 4 (on ISO model) information. It uses
@@ -64,46 +68,55 @@ capabilities:
       traffic rather than inspecting the actual content of the packets.
   - id: CCC.LB.CP05
     title: URL-Based Routing
+    group: Networking
     description: |
       Direct incoming requests to different backend resources based on
       the content of the request URL.
   - id: CCC.LB.CP06
     title: HTTP Header-Based Routing
+    group: Networking
     description: |
       Direct incoming requests to different backend resources based on
       the values of HTTP headers.
   - id: CCC.LB.CP07
     title: WebSocket Support
+    group: Networking
     description: |
       Ability to support web socket communication.
   - id: CCC.LB.CP08
     title: Dual-stack Load Balancing
+    group: Networking
     description: |
       Ability to support traffic originated from both IPv4 and IPv6.
   - id: CCC.LB.CP09
     title: Load Balancer Autoscaling
+    group: Resource
     description: |
       Ability for the load balancer to dynamically adjust its capacity
       in response to fluctuations in incoming traffic.
   - id: CCC.LB.CP10
     title: Target Autoscaling
+    group: Resource
     description: |
       Ability for the load balancer to trigger scaling actions of the
       backend instances (targets) to handle fluctuations in incoming traffic.
   - id: CCC.LB.CP11
     title: SSL/TLS Termination
+    group: Encryption
     description: |
       Process of decrypting SSL or TLS encrypted traffic at the load balancer
       level rather than at the backend servers. This allows the load balancer
       to offload the decryption task from the backend servers.
   - id: CCC.LB.CP12
     title: Target Health Checks
+    group: Observability
     description: |
       Ability to continuously perform health checks on backend backend targets
       in form of checking the response to HTTP request, TCP connection or checking
       other application-specific parameter
   - id: CCC.LB.CP13
     title: Health Checks-based Target Removal
+    group: Networking
     description: |
       If the health check detects that a backend target is unhealthy
       the load balancer will remove that unhealthy target from its list
@@ -111,35 +124,42 @@ capabilities:
       routed to the unhealthy target.
   - id: CCC.LB.CP14
     title: Retries
+    group: Networking
     description: |
       Ability to retry delivery of failed requests to targets. The conditions
       under which the load balancer retries, how long to wait before retrying,
       and the maximum number of retries permitted are configurable.
   - id: CCC.LB.CP15
     title: Session Affinity
+    group: Networking
     description: |
       Can configure subsequent requests from an initial client to be
       passed to the same target.
   - id: CCC.LB.CP16
     title: URL Redirects
+    group: Networking
     description: |
       Redirect incoming traffic to a different URL or location.
   - id: CCC.LB.CP17
     title: URL Rewrites
+    group: Networking
     description: |
       Rewrite URL paths before forwarding them to backend services.
   - id: CCC.LB.CP18
     title: Custom Response
+    group: Networking
     description: |
       Ability to configure specific HTTP responses to be returned by
       the load balancer under defined conditions.
   - id: CCC.LB.CP19
     title: Request and Response Header Transformations
+    group: Networking
     description: |
       Ability to modify HTTP headers of both incoming requests and outgoing
       responses.
   - id: CCC.LB.CP20
     title: Traffic Splitting / Weighted Routing
+    group: Networking
     description: |
       Can distribute incoming traffic across multiple backend resources
       based on predefined weights or percentages (e.g., for canary
@@ -147,17 +167,20 @@ capabilities:
       traffic migrations).
   - id: CCC.LB.CP21
     title: Traffic Mirroring
+    group: Networking
     description: |
       Can duplicate incoming network traffic and send it to a secondary
       destination for monitoring, analysis, or testing purposes.
   - id: CCC.LB.CP22
     title: Rate Limiting / Throttling
+    group: Networking
     description: |
       Ability to limit the number of requests per second per client. This
       ensures that no single client or user overloads the backend servers,
       distributing requests fairly across multiple instances.
   - id: CCC.LB.CP23
     title: Firewall Integration
+    group: Networking
     description: |
       Ability to seamlessly integrate with firewall services to ensure only
       legitimate and secure traffic reaches backend servers, blocking malicious

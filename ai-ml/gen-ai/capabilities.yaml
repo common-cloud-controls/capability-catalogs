@@ -33,6 +33,7 @@ imports:
 capabilities:
   - id: CCC.GenAI.CP01
     title: Text-Based Model Selection
+    group: MachineLearning
     description: |
       Ability to select a foundation model that excels at natural language
       understanding and generation tasks such as summarization, translation,
@@ -40,12 +41,14 @@ capabilities:
 
   - id: CCC.GenAI.CP02
     title: Code-Based Model Selection
+    group: MachineLearning
     description: |
       Ability to select a foundation model that focuses on code understanding,
       generation, and transformation tasks.
 
   - id: CCC.GenAI.CP03
     title: Embedding Model Selection
+    group: MachineLearning
     description: |
       Ability to select a foundation model used for tasks like semantic
       search, clustering, and document similarity by converting text into
@@ -53,123 +56,145 @@ capabilities:
 
   - id: CCC.GenAI.CP04
     title: Image-Based Model Selection
+    group: MachineLearning
     description: |
       Ability to select a foundation model that focuses on tasks related to vision,
       such as image generation, editing, and manipulation.
 
   - id: CCC.GenAI.CP05
     title: Multimodal Model Selection
+    group: MachineLearning
     description: |
       Ability to select a foundation model that supports more than one modality,
       such as combining text and image.
 
   - id: CCC.GenAI.CP06
     title: Customizable Model Selection
+    group: MachineLearning
     description: |
       Provide users the ability to fine-tune models with their own data.
 
   - id: CCC.GenAI.CP07
     title: Parameter Tuning - Temperature
+    group: MachineLearning
     description: |
       Ability to control the randomness and creativity of the response.
 
   - id: CCC.GenAI.CP08
     title: Parameter Tuning - Max Token
+    group: MachineLearning
     description: |
       Ability to limit the length of the response.
 
   - id: CCC.GenAI.CP09
     title: Parameter Tuning - Top P (Nucleus Sampling)
+    group: MachineLearning
     description: |
       Ability to adjust the number of likely next tokens to consider based on
       cumulative probability.
 
   - id: CCC.GenAI.CP10
     title: Parameter Tuning - Top K
+    group: MachineLearning
     description: |
       Ability to limit the number of token choices for the next word.
 
   - id: CCC.GenAI.CP11
     title: Parameter Tuning - Stop Sequences
+    group: MachineLearning
     description: |
       Ability to halt generation when a predefined sequence is encountered.
 
   - id: CCC.GenAI.CP12
     title: Parameter Tuning - Frequency Penalty
+    group: MachineLearning
     description: |
       Ability to penalize words that have been used frequently, reducing
       their likelihood of being repeated.
 
   - id: CCC.GenAI.CP13
     title: Parameter Tuning - Presence Penalty
+    group: MachineLearning
     description: |
       Ability to penalize tokens that have already been used, encouraging
       the model to introduce new tokens.
 
   - id: CCC.GenAI.CP14
     title: Parameter Tuning - Context Length
+    group: MachineLearning
     description: |
       Ability to control how much prior conversation or input the model will
       use for generating coherent responses.
 
   - id: CCC.GenAI.CP15
     title: Text-Based Prompts
+    group: MachineLearning
     description: |
       Ability to input prompts in plain text.
 
   - id: CCC.GenAI.CP16
     title: Structured Prompts
+    group: MachineLearning
     description: |
       Ability to provide structured input such as JSON as prompts.
 
   - id: CCC.GenAI.CP17
     title: Contextual Prompts
+    group: MachineLearning
     description: |
       Ability to provide context or background information within the prompt
       to guide the response.
 
   - id: CCC.GenAI.CP18
     title: Interactive Prompts
+    group: MachineLearning
     description: |
       Ability to use conversational prompts to create interactive dialogues.
 
   - id: CCC.GenAI.CP19
     title: Image-Based Prompts
+    group: MachineLearning
     description: |
       Ability to input an image as a prompt to generate a response.
 
   - id: CCC.GenAI.CP20
     title: Custom Template Prompts
+    group: MachineLearning
     description: |
       Ability to define custom templates or structures for prompts to
       standardize interactions with the models.
 
   - id: CCC.GenAI.CP21
     title: Generate Content
+    group: MachineLearning
     description: |
       Ability to generate a response given a foundation model, parameter values,
       and a prompt.
 
   - id: CCC.GenAI.CP22
     title: Data Control
+    group: Data
     description: |
       Ensures prompts, model outputs, embeddings, and training data fed by
       customers are not used to train foundation models.
 
   - id: CCC.GenAI.CP23
     title: Data Storage
+    group: Data
     description: |
       Ability to retrieve previously generated outputs and prompts for the
       given session.
 
   - id: CCC.GenAI.CP24
     title: Content Moderation
+    group: MachineLearning
     description: |
       Ensure the service detects and filters abusive, harmful, and sensitive
       information to ensure responsible and safe use of the service.
 
   - id: CCC.GenAI.CP25
     title: Plugin Integrations
+    group: MachineLearning
     description: |
       Ability for the model to use tools to complete a model interaction.
       For example web search, python code execution or external maths engine.
