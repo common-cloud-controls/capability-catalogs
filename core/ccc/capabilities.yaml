@@ -220,3 +220,43 @@ capabilities:
     description: |
       The service automatically adjusts its resource allocation
       (such as CPU, memory, and storage) based on current demand and workload.
+
+  - id: CCC.Core.CP32
+    title: Deletion Protection
+    group: Resource
+    description: |
+      The service may be configured to prevent accidental or unauthorized
+      deletion of resources through protective mechanisms that require
+      explicit confirmation or disabling before removal is permitted.
+
+  - id: CCC.Core.CP33
+    title: Lifecycle Policies
+    group: Resource
+    description: |
+      The service supports defining policies to automate resource
+      lifecycle management, including automatic expiry, archival,
+      or state transitions based on time or conditions.
+
+  - id: CCC.Core.CP34
+    title: Immutable Resources
+    group: Data
+    description: |
+      The service may be configured to designate resources as immutable,
+      preventing modification or deletion after creation for a defined
+      period or permanently.
+
+  - id: CCC.Core.CP35
+    title: Soft Delete
+    group: Resource
+    description: |
+      The service supports marking resources for deletion with a
+      configurable grace period, during which the resource is
+      inaccessible but recoverable before permanent removal.
+
+  - id: CCC.Core.CP36
+    title: Credential Rotation
+    group: Encryption
+    description: |
+      The service supports automatic or manual rotation of
+      cryptographic keys, secrets, or credentials to maintain
+      security posture and limit the impact of compromise.

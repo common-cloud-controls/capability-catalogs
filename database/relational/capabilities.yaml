@@ -47,6 +47,8 @@ imports:
         remarks: Passive Ingestion
       - reference-id: CCC.Core.CP31
         remarks: Elastic Scaling
+      - reference-id: CCC.Core.CP32
+        remarks: Deletion Protection
 
 capabilities:
   - id: CCC.RDMS.CP01
@@ -122,12 +124,6 @@ capabilities:
     group: Networking
     description: |
       Ability to configure a managed connection pool for the database.
-
-  - id: CCC.RDMS.CP13
-    title: Deletion Protection
-    group: Resource
-    description: |
-      Protect the database against accidental deletion.
 
   - id: CCC.RDMS.CP14
     title: Dedicated Database Instances

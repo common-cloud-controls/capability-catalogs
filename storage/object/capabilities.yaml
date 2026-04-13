@@ -37,6 +37,10 @@ imports:
         remarks: Active Ingestion
       - reference-id: CCC.Core.CP30
         remarks: Passive Ingestion
+      - reference-id: CCC.Core.CP33
+        remarks: Lifecycle Policies
+      - reference-id: CCC.Core.CP34
+        remarks: Immutable Resources
 
 capabilities:
   - id: CCC.ObjStor.CP01
@@ -83,20 +87,6 @@ capabilities:
     group: Data
     description: |
       Supports for deleting objects from the bucket given the object key.
-
-  - id: CCC.ObjStor.CP08
-    title: Lifecycle Policies
-    group: Resource
-    description: |
-      Supports defining policies to automate data management tasks, especially
-      those related to cost management.
-
-  - id: CCC.ObjStor.CP09
-    title: Object Modification Locks
-    group: Data
-    description: |
-      Allows locking of objects to disable modification and/or deletion of an
-      object for a defined period of time.
 
   - id: CCC.ObjStor.CP10
     title: Object Level Access Control

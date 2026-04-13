@@ -21,6 +21,8 @@ imports:
         remarks: API Access
       - reference-id: CCC.Core.CP17
         remarks: Alerting
+      - reference-id: CCC.Core.CP34
+        remarks: Immutable Resources
 capabilities:
   - id: CCC.AuditLog.CP01
     title: Default Retention Period
@@ -53,11 +55,6 @@ capabilities:
     group: Observability
     description: |
       Ability to filter audit events based on specific attribute.
-  - id: CCC.AuditLog.CP07
-    title: Immutable Log Entries
-    group: Observability
-    description: |
-      Audit Log events are immutable and cannot be altered or deleted once generated.
   - id: CCC.AuditLog.CP08
     title: External Sink
     group: Observability

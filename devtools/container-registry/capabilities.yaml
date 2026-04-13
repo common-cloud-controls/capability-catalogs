@@ -33,6 +33,10 @@ imports:
         remarks: Command-line Interface
       - reference-id: CCC.Core.CP30
         remarks: Passive Ingestion
+      - reference-id: CCC.Core.CP33
+        remarks: Lifecycle Policies
+      - reference-id: CCC.Core.CP34
+        remarks: Immutable Resources
 
 capabilities:
   - id: CCC.CntrReg.CP01
@@ -54,13 +58,6 @@ capabilities:
     description: |
       Support for creating container image repositories that are open to the public.
       These repositories are used mainly for sharing container images.
-
-  - id: CCC.CntrReg.CP04
-    title: Lifecycle Policies
-    group: Resource
-    description: |
-      Supports defining of policies for automatic expiry of
-      unused or outdated images to manage storage effectively.
 
   - id: CCC.CntrReg.CP05
     title: Image Scanning
@@ -91,15 +88,6 @@ capabilities:
       Ability to store images built for different CPU architectures such as
       x86_64 (AMD/Intel), ARM64, and others within the same container image
       repository.
-
-  - id: CCC.CntrReg.CP09
-    title: Immutable Tags
-    group: Data
-    description: |
-      Prevent tags from being overwritten or deleted once they have been
-      assigned to an image. This ensures that once a container image is tagged
-      with a specific version or identifier, that tag remains associated with
-      the same image throughout its lifetime.
 
   - id: CCC.CntrReg.CP10
     title: List Repositories

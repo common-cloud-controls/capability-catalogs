@@ -25,6 +25,10 @@ imports:
         remarks: Command-line
       - reference-id: CCC.Core.F29
         remarks: Active Ingestion
+      - reference-id: CCC.Core.CP35
+        remarks: Soft Delete
+      - reference-id: CCC.Core.CP36
+        remarks: Credential Rotation
 capabilities:
   - id: CCC.KeyMgmt.CP01
     title: AES-256
@@ -111,28 +115,11 @@ capabilities:
     group: Encryption
     description: |
       Supports the ability to re-enable a disabled managed key.
-  - id: CCC.KeyMgmt.CP18
-    title: Soft Delete
-    group: Encryption
-    description: |
-      Supports the ability to prevent the immediate deletion of a managed key. This includes the ability
-      to recover accidental deletion of keys within a grace period.
   - id: CCC.KeyMgmt.CP19
     title: Delete Key
     group: Encryption
     description: |
       Supports the ability to permanently delete a managed key after the grace period defined on soft delete.
-  - id: CCC.KeyMgmt.CP20
-    title: Automatic Symmetric Key Rotation
-    group: Encryption
-    description: |
-      Supports the ability to automatically rotate a managed symmetric
-      key as long as the key was generated within the KMS.
-  - id: CCC.KeyMgmt.CP21
-    title: Manual Key Rotation
-    group: Encryption
-    description: |
-      Supports the ability to manually rotate a managed key.
   - id: CCC.KeyMgmt.CP22
     title: Key Import
     group: Encryption
